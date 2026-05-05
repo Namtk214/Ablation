@@ -312,7 +312,7 @@ def denoise_loop(
     guidance_high=1.0,
     mode="SDE",
     sampling_method="euler",
-    reverse: bool = True,
+    reverse: bool = False,
 ):
     args = Config()
     args.num_steps = num_steps
