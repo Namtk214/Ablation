@@ -778,6 +778,15 @@ PREDICTOR_VARIANTS = {
         "attn_dim": None,
         "num_heads": None,
     },
+    "convnext_super_large": {
+        "arch": "convnext",
+        "width": 1024,
+        "num_blocks": 8,
+        "expansion": 2,
+        "dilation_schedule": (1, 1, 1, 1, 1, 1, 1, 1),
+        "attn_dim": None,
+        "num_heads": None,
+    },
     "dilated_tiny": {
         "arch": "dilated_convnext",
         "width": 256,
@@ -953,6 +962,10 @@ PREDICTOR_VARIANT_ALIASES = {
     "large": "convnext_large",
     "p_large": "convnext_large",
     "plarge": "convnext_large",
+    "super_large": "convnext_super_large",
+    "p_super_large": "convnext_super_large",
+    "psuperlarge": "convnext_super_large",
+    "xlarge": "convnext_super_large",
     "dit_large": "dit2_large",
     "dit_l": "dit2_large",
 }
